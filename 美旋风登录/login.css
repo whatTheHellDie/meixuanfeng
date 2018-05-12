@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;padding:0px;font-family:"黑体 ","微软雅黑"}
+a{text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+ul li{list-style-type:none;}
+img{border:0px;display:block;}
+.clear{clear:both;}
+body{background:#fff;position: relative;}
+i{display: inline-block;}
+.shade{width:100%;height:100%;background:rgba(0,0,0,0.6);position:fixed;top:0px;left:0px;
+			z-index:2;display:none;}
+input{outline: 0; font-size: 16px; color: #4c4c4c;}
+header{background: #fff;width: 100%;height: 115px;min-width: 990px;}
+.bg_huawen{position: absolute;width: 100px;top: 0px;left: 0;z-index: 6;overflow: hidden;}
+.bg_huawen2{position: absolute;width: 302px;top: -63px;right: 0;z-index: 6;overflow: hidden;}
+.bg_huawen3{position: absolute;width: 55px;top: 566px;right: 0;z-index: 6;overflow: hidden;}
+.bg_huawen img{float: right;}
+.header_wrap{max-width: 1500px;min-width:990px;width:100%;margin: 0 auto; height: 115px;}
+.logo{padding-top: 20px;width: 360px;height: 95px;padding-left: 29px;display: inline-block;}
+.logo img{    width: 230px;
+    height: 80px;}
+
+.phone_number{float: right;margin-top: 93px;}
+.phone_icon{width: 37px;height: 34px;background: url(img/dianhua.png);
+font-size: 18px;color: #FFF;
+}
+.number{color: #fff;position: relative;margin-left: 13px;top: -9px;}
+.phone_line{height: 22px;width: 2px;background:url(img/phone_line.png) ;margin:0 25px;position: relative;top: -6px;}
+.number_logo{display:inline-block;width: 73px;height: 20px;position: relative;top: -6px;}
+.nav_bg{z-index:2;width: 100%;position: absolute;top: 160px;height: 60px;background: #374370;opacity: 0.33;}
+
+.wrap{width:100%;min-width:1100px;min-height: 874px;  background: #e7a6ff;margin: 0 auto;
+    position: relative;    z-index: 5;}
+ /*内容开始*/
+.center_bg{    padding: 5.1% 7% 0 10.405%;
+    width: 42.65%;
+    height: 512px;
+    float: left;
+       
+   }
+ .left_bg{width: 100%;position: relative;top: 8px;}
+
+.login_box{min-height:384px;float: left;    width: 24.1%;height: 32%;;background: #fff;margin-top: 4.6875%;}
+.login_title{font-size: 24px;color: #535353;margin-top: 7.235%;margin-left: 7.235%;}
+.register{padding-right: 9.64%;}
+.register a{color: #696969;font-size: 17px; float: right;}
+.user_wrap{padding-left: 8.16%}
+.user_wrap_top{margin-top: 5.2%;}
+#username{margin-left: 4.823%; height: 9.276%;line-height: 9.276%;width: 68%;border: 1px solid #bebec6;}
+#userpassword{margin-left: 4.823%; height: 9.276%;line-height: 9.276%;width: 68%;border: 1px solid #bebec6;}
+#usercheck{margin-left: 4.823%; height: 9.276%;line-height: 9.276%;width: 27.46%;border: 1px solid #bebec6;}
+.user_label{font-size: 18px;color: #8a8a8c;width: 54px;display: inline-block;}
+.check_img{background: #ff0000; width: 10px;width: 28%;margin-left: 1.855%;}
+.refresh{float: left;width: 3.71%;margin-left: 3%;margin-top: 3.15%;}
+.check_box{background: #fff; position: relative;top: 1px;}
+.remeber_password{margin-left: ;}
+.login_button{width: 76.39%;height: 11.13%;background: #d4007e;text-align: center;color: #fff;font-size: 19px;}
+.three_button{padding-top: 6.307%;font-size: 0px;}
+.box{display: inline-block;width: 9.647%;margin-left: 10.575%;}
+/*foot*/
+.foot{width: 100%;
+    background: #5e0064;
+    height: 173px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 5;
+    text-align: center;
+    color: #fff;}
+.foot_logo{    width: 58px;
+    margin: 18px auto 19px;}
+.phone{    font-size: 13px;
+    margin-top: 5px;}
+.address{    font-size: 14px;
+    margin-top: 2px;}
+.bottom-line{width: 40%; display: inline-block;height: 2px;background: url(img/bottom_line.png);position: relative;    top: -5px;}
+
+

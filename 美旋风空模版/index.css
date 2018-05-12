@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;padding:0px;font-family:"微软雅黑";}
+a{text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+ul li{list-style-type:none;}
+img{border:0px;display:block;}
+.clear{clear:both;}
+body{background:#fff;position: relative;}
+i{display: inline-block;}
+.shade{width:100%;height:100%;background:rgba(0,0,0,0.6);position:fixed;top:0px;left:0px;
+			z-index:2;display:none;}
+
+header{background: url(img/top_bg.png);width: 100%;height: 160px;min-width: 990px;}
+.bg_huawen{position: absolute;width: 178px;top: 0px;left: 0;z-index: 2;overflow: hidden;}
+.bg_huawen2{position: absolute;width: 380px;top: -3px;right: 0;z-index: 2;overflow: hidden;}
+.bg_huawen img{float: right;}
+.header_wrap{max-width: 1200px;min-width:990px;width:100%;margin: 0 auto; height: 160px;}
+.logo{padding-top: 35px;width: 360px;height: 95px;padding-left: 29px;display: inline-block;}
+
+
+.phone_number{float: right;margin-top: 93px;}
+.phone_icon{width: 37px;height: 34px;background: url(img/dianhua.png);
+font-size: 18px;color: #FFF;
+}
+.number{color: #fff;position: relative;margin-left: 13px;top: -9px;}
+.phone_line{height: 22px;width: 2px;background:url(img/phone_line.png) ;margin:0 25px;position: relative;top: -6px;}
+.number_logo{display:inline-block;width: 73px;height: 20px;position: relative;top: -6px;}
+.nav_bg{z-index:2;width: 100%;position: absolute;top: 160px;height: 60px;background: #374370;opacity: 0.33;}
+.center_bg{    z-index: 1;
+    width: 100%;
+    position: absolute;
+    height: 1080px;}
+.wrap{width:100%;min-width:990px;max-width: 1200px;height: 1080px;  background: url(img/wrap_bg.png);margin: 0 auto;
+    position: relative;    z-index: 5;}
+    .nav{width: 100%;height: 60px;position: absolute; top: 0px;z-index: 5;margin: 0 auto;}
+    .nav_ul{    width: 955px;
+    margin: 0 auto;background: url(img/wrap_bg.png);}
+    .nav_ul .nav_li{float: left;width: 135px;height: 60px;z-index: 1000;
+    border-right: 1px solid #606690; text-align: center;
+    line-height: 60px;font-size: 14px;position: relative;}
+    .shouye{width: 136px !important;border:none !important;height: 60px;background: url(img/shouye.png) !important;}
+     .shouye a{color: #fff !important; display: block;}
+     .shouye a:hover{color: #fff !important;}
+     .nav_ul .nav_li a{color: #fff;display: block;}
+     .nav_ul .nav_li a:hover{color: #ff0090 ; position: relative;}
+     .gg{color: #ff0090 !important;}
+     .xiala_img{display:none;background: url(img/xiala.png);width: 23px;height: 12px;position: absolute;    top: 42px;
+    left: 56px;}
+   .nav_second_ul{display:none;width: 89px;background-image: -moz-linear-gradient( 90deg, rgb(43,6,28) 0%, rgb(212,0,126) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(43,6,28) 0%, rgb(212,0,126) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(43,6,28) 0%, rgb(212,0,126) 100%);margin-left: 22px;}
+   .nav_second_li{width: 100%;width: 89px;height: 37px;line-height: 37px;border-bottom: 2px solid #b5026c;}
+     .nav_second_li2{border-color: #8c0053;}
+     .nav_second_li3{border-color: #4d0020;}
+     .nav_second_li a:hover{color: #fff !important;}
+
+
+
+/*轮播图开始*/
+.focus{    height: 493px;
+    width: 955px;
+    position: relative;
+    margin: 0 auto;}
+.focus .left{float:left; width:955px; height:493px; overflow:hidden;position: relative;}
+.focus .left li{position:absolute; left:0; top:0; width:842px; height:415px; z-index:1; opacity:0; filter:alpha(opacity=0);}
+.focus .left li.active{z-index:2;}
+.focus .left li p{display:none;}
+.left img{width: 955px;height: 493px;}
+.focus .right{     z-index: 3;
+    position: absolute;
+    right: 20px;
+    bottom: 15px;}
+.focus .right li{height:12px; width: 12px; line-height: 12px;font-size:12px; background: #3e3e3e;
+ color:#fff;margin: 0 2px;
+  cursor: pointer; float: left; border-radius: 100px;padding: 4px;
+text-align: center;}
+.focus .right li:hover,.focus .right li.active{    background: #b228b9;color:#fff; }
+
+/*连续点击带*/
+
+.v_show { width:955px; margin:0 auto;margin-top: 27px;z-index: 1000; }
+.v_caption { }
+.v_caption h2 { float:left; width:84px; height:35px; overflow:hidden; background:url(img/btn_cartoon.gif) no-repeat; text-indent:-9999px; }
+.v_caption .cartoon { background-position: 0 -100px; }
+.v_caption .variety { background-position:-100px -100px; }
+.highlight_tip { display:inline; float:left; margin:14px 0 0 10px; }
+.highlight_tip span { display:inline; float:left; width:7px; height:7px; overflow:hidden; margin:0 2px; background:url(img/btn_cartoon.gif) no-repeat 0 -320px; text-indent:-9999px; }
+.highlight_tip .current { background-position:0 -220px; }
+
+.prev { background:url(img/jiantou.png);width: 46px;display: inline-block;height: 82px;position: relative;top: -142px;left: -79px; }
+.next { background:url(img/jiantou.png);width: 46px;display: inline-block;height: 82px;position: relative; background-position:-46px 0; float: right;top: -142px;left: 79px;}
+.v_caption em { display:inline; float:right; margin:10px 12px 0 0; font-family:simsun; }
+.v_content { position:relative; width:955px; height:204px; overflow:hidden; }
+.v_content_list { position:absolute; width:2500px;top:0px; left:0px; }
+.v_content ul {float:left;width: 10000px;}
+.v_content ul li { display:inline; float:left;padding-right: 32px;  }
+.v_content ul li a { display:block; width:295px; height:204px; overflow:hidden; }
+.v_content ul li img {  width:295px; height:204px; }
+.v_content ul li h4 { width:295px; height:204px; overflow:hidden; margin-top:12px; font-weight:normal; }
+.v_content ul li h4 a { display:inline !important; height:auto !important; }
+.v_content ul li span { color:#666; }
+.v_content ul li em { color:#888; font-family:Verdana; font-size:0.9em; }
+
+.foot{width: 100%;background:url(img/wrap_bg.png);height: 212px;    position: absolute;
+       bottom: 0px;z-index: 5;text-align: center;color: #fff;}
+.foot_logo{width: 73px;height: 79px;margin: 23px auto 19px;}
+.phone{font-size: 13px;margin-top: 15px;}
+.address{font-size: 14px;margin-top: 11px;}
+.bottom-line{width: 40%; display: inline-block;height: 2px;background: url(img/bottom_line.png);position: relative;    top: -5px;}
+
+

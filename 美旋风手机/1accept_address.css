@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;padding:0px;font-family:"微软雅黑";font-size: 0.75rem;}
+a{text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+ul li{list-style-type:none;margin: 0; padding: 0;}
+img{border:0px;display:block;}
+.clear{clear:both;}
+input{outline: 0;}
+body{background:#fff;position: relative;min-height: 30rem;}
+img{display: inline-block;}
+.shade{width:100%;height:100%;background:rgba(0,0,0,0.6);position:fixed;top:0px;left:0px;
+			z-index:2;display:none;padding-top: ;}
+.wrap{width:100%;min-width:320px;margin:0px auto 0px;    padding-bottom: 6.25rem;padding-top: 2.8125rem;}
+.return_img{width: 0.75rem;height: 1.28125rem;position: absolute;top: 0.75rem;left: 1.09375rem;}
+.head{color: #fff;text-align: center;width: 100%;height:2.8125rem ;line-height: 2.8125rem;font-size:0.9375rem;background: #220B35;position: relative;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+.grey_space{background: #eaeaea;height:0.40625rem;}
+/**/
+.search_box_wrap{position: relative;width: 14.40625rem;height: 1.59375rem;margin-left: 2.0625rem;padding-top: 0.71875rem;}
+.search_box{width: 13.15625rem;height: 1.59375rem;border-radius:20px;background: #9b91a4;
+border: none;padding: 0 0.625rem;font-size: 0.875rem;color: #fff;}
+.search_box_img{width: 1.1875rem;height: 1.0625rem; position: absolute; top: 1rem;right: 0.71875rem;}
+.search_box_bigwrap{position: absolute;top: 0;left: 0;}
+
+
+
+
+
+
+/*收获地址管理*/
+	.my_address{position: relative;height: 5.03125rem;border-bottom:0.0625rem solid #d4d4d4;    padding-left: 1.8rem;}
+	.my_radio{    position: absolute;
+    top: 2.03125rem;
+    left: 0.625rem;}
+	.my_default_address{color: #d5007e;font-size: 0.75rem;}
+	.my_address_title{padding-top: 0.78125rem;color: #000;}
+	.my_address_number{padding-left: 17px;font-size: 0.75rem;}
+	.my_address_detail{  color: #707070;  padding-top: 0.125rem;width: 16.5rem;}
+	.my_turn_detail{position: absolute;top: 2.125rem;    right: 0.5rem;;width: 0.65625rem;height: 1rem;}
+	.acceptgoods{position: relative;height: 3.125rem;border-bottom:0.0625rem solid #d4d4d4;padding-left: 0.75rem;}
+	.add_adress_column{font-size:0px;height: 2.3125rem;position: fixed;bottom:0rem;border-top:0.0625rem solid #b7b7b7;width: 100%;background: #d5007e;}
+	.add_adress_column a{color: #fff;display: block;    height: 2.3125rem;line-height: 2.3125rem;}
+	.add_address_button{padding-left: 0.5rem;float: left;font-size: 0.9375rem;}
+	.add_address_img{float: left;width: 1.0625rem;height: 1.0625rem;margin-left: 6rem;margin-top: 0.625rem;}
+
+
+/*省份选择*/
+.last_province{display:none;padding-left: 0.84375rem;color: #000;height: 2.5rem;line-height: 2.5rem;font-size: 0.75rem;border-bottom: 1px solid #dfdfdf;background: #f3e5ff;}
+.last_city{display:none;padding-left: 0.84375rem;color: #000;height: 2.5rem;line-height: 2.5rem;font-size: 0.75rem;border-bottom: 1px solid #dfdfdf;background: #f9f2ff;}
+.province_li{padding-left: 0.84375rem;color: #7c7c7c;height: 2.5rem;line-height: 2.5rem;font-size: 0.75rem;border-bottom: 1px solid #dfdfdf;}
+.choose_address_ul{}
+.city_li{padding-left: 0.84375rem;color: #7c7c7c;height: 2.5rem;line-height: 2.5rem;font-size: 0.75rem;border-bottom: 1px solid #dfdfdf;}
+.choose_city_ul{display: none;}
+.zone_li{padding-left: 0.84375rem;color: #7c7c7c;height: 2.5rem;line-height: 2.5rem;font-size: 0.75rem;border-bottom: 1px solid #dfdfdf;}
+.choose_zone_ul{display: none;}
+
+
+
+/*foot*/
+.foot{width:100%;position:fixed;bottom:0px;left:0px;max-width:640px;min-width:320px;
+		margin-left:auto;margin-right:auto;margin:auto;background:#220b35;
+		left:0px;right:0px;height: 2.40625rem;}
+.foot_ul{padding-top: 0.1875rem;font-size: 0px;}
+.foot_li{float:left;width: 25%;}
+.foot_left{margin-left: 3.375rem;}
+.foot_a{width:100%;display:block;}
+.foot_img{}
+.shop_carNumber{width:14px;height:14px;background:red;color:#fff;
+				padding:1%;text-align:center;
+				position:absolute;top:-10%;left:69%;border-radius:4px;font-size:8px;}
+.foot_img img{width:1.09375rem;height:1.09375rem;margin:auto;display:block;}
+p.foot_title_p{width:100%;display:block;color:#fff;text-align:center;font-size:0.53125rem;    margin-top: 0.125rem;}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #fff;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #fff;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #fff;
+}
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="address_manage.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/hhSwipe.js" type="text/javascript" charset="utf-8"></script>
+<style type="text/css">
+	td{ border-bottom: 1px solid #048F74;}
+	
+</style>
+<script type="text/javascript">
+	(function (doc, win) {
+  var docEl = doc.documentElement,
+    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+    recalc = function () {
+      var clientWidth = docEl.clientWidth;
+      if (!clientWidth) return;
+      docEl.style.fontSize = 16 * (clientWidth / 320) + 'px';
+    };
+ 
+  if (!doc.addEventListener) return;
+  win.addEventListener(resizeEvt, recalc, false);
+  doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
+	</head>
+	<body>
+		<div class="wrap">
+		<div class="head">收货地址管理
+		<img src="img/return.png" class="return_img" onClick="javascript:history.back(-1);" alt="" />
+			
+		</div>
+		<!--收获开始-->
+			<div class="acceptgoods">
+				<a href="choose_addresss.html">
+				<div class="address_title">所在地区：</div>
+				<div class="address_detail">广西壮族自治区南宁市青秀区</div>
+				<img src="img/turn_detail.png" alt="" class="turn_detail" />
+				</a>
+			</div>
+			<div class="acceptgoods">
+				<a href="#">
+				<div class="address_title">详细地址：</div>
+				<div class="address_detail"><input type="text" class="address_input" value="合作路1号昌泰大厦14层" /></div>
+				<img src="img/turn_detail.png" alt="" class="turn_detail" />
+			</div>
+			</a>
+			<div class="acceptgoods">
+				<div class="address_title">收货人：</div>
+				<div class="address_detail"><input type="text" class="address_input" value="翁晓月" /></div>
+				<img src="img/turn_detail.png" alt="" class="turn_detail" />
+			</div>
+			<div class="acceptgoods">
+				<div class="address_title">手机号码：</div>
+				<div class="address_detail"><input type="text" class="address_input" value="18211687250" /></div>
+				<img src="img/turn_detail.png" alt="" class="turn_detail" />
+			</div>
+			<div class="set_to_default_wrap">
+				<div class="set_to_default" >设为默认地址</div>
+				<div class="set_default_button"><input type="checkbox" class="check_box"  /></div>
+			</div>
+			</div>
+			<!--保存框，在wrap外面-->
+		<div class="save_column">
+			<a href="address_none.html"><div class="del"><img src="img/del.png" class="del_img"/>删除</div></a>
+			<div class="save"><a href="accept_address.html">保存</a></div>
+		</div>
+		<!--foot start-->
+	<!--foot end-->
+	<script type="text/javascript">
+	
+	$(function(){
+		$(".turn_detail").click(function(){
+			$(this).siblings(".address_detail").find("input").focus();
+		})
+		//设为默认地址
+		$(".set_to_default_wrap").click(function(){
+			if($(".check_box").attr("checked")=="checked"){
+				$(".check_box").removeAttr("checked");
+			}
+			else{
+				$(".check_box").attr("checked","checked")
+			}
+		})
+		//防止选择框事件冒泡
+		$(".check_box").click(function(e){
+			e.stopPropagation();
+		})
+		})
+	
+	</script>
+	</body>
+	
+</html>

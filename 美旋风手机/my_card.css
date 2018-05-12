@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;padding:0px;font-family:"微软雅黑";font-size: 0.75rem;}
+a{text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+ul li{list-style-type:none;margin: 0; padding: 0;}
+img{border:0px;display:block;}
+.clear{clear:both;}
+input{outline: 0;}
+body{background:#fff;position: relative;min-height: 30rem;background: #ededed;}
+img{display: inline-block;}
+.wrap{width:100%;min-width:320px;margin:0px auto 0px;    padding-bottom: 6.25rem;padding-top: 2.8125rem;}
+.return_img{width: 0.75rem;height: 1.28125rem;position: absolute;top: 0.75rem;left: 1.09375rem;}
+.head{color: #fff;text-align: center;width: 100%;height:2.8125rem ;line-height: 2.8125rem;font-size:0.9375rem;background: #220B35;position: relative;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+
+/*添加银行卡*/
+.my_card_wrap{position: relative;width: 18rem;height: 5.15625rem;margin: 1.375rem auto;}
+.my_card{width: 18rem;height: 5.15625rem;}
+.card_name{position: absolute;top: 0.75rem;left: 1rem;font-weight: 800;}
+.card_number{position: absolute;bottom: 1rem;left: 1rem;color: #5a5a5a;}
+.my_name{position: absolute;bottom: 1rem;right: 3.4375rem;color: #5a5a5a;}
+.card_line{height:1px; background:#b8c6d0;width: 15.46875rem;position: absolute;left: 0.03125rem;top: 2.5rem;}

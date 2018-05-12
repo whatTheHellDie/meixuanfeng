@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;padding:0px;font-family:"微软雅黑";font-size: 0.75rem;}
+a{text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+ul li{list-style-type:none;margin: 0; padding: 0;}
+img{border:0px;display:block;}
+.clear{clear:both;}
+input{outline: 0;}
+body{background:#fff;position: relative;min-height: 30rem;background: #ededed;}
+img{display: inline-block;}
+.wrap{width:100%;min-width:320px;margin:0px auto 0px;    padding-bottom: 6.25rem;padding-top: 2.8125rem;}
+.return_img{width: 0.75rem;height: 1.28125rem;position: absolute;top: 0.75rem;left: 1.09375rem;}
+.head{color: #fff;text-align: center;width: 100%;height:2.8125rem ;line-height: 2.8125rem;font-size:0.9375rem;background: #220B35;position: relative;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+
+/*添加银行卡*/
+.my_card_wrap{padding-top: 3.875rem;}
+.my_card{margin-bottom: 2.28125rem;width: 16.6875rem;margin: 0 auto;margin-bottom: 2.25rem;}
+.my_label{ margin-right: 0.53125rem;color: #888888;width: 4.125rem;display: inline-block;text-align: right;}
+.my_input{color: #5a5a5a;width: 11.875rem;height: 1.8125rem;border: 0.0625rem solid #d9d9d9;}
+.save{color: #fff;background: #d50074;width: 18.75rem;
+border-radius: 0.3125rem;letter-spacing: 0.4375rem;text-indent:  0.4375rem;
+text-align: center;height: 2.0625rem;line-height: 2.0625rem;margin: 0 auto;margin-top: 4.375rem;}

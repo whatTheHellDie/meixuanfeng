@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="dingdan_detail.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	(function (doc, win) {
+  var docEl = doc.documentElement,
+    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+    recalc = function () {
+      var clientWidth = docEl.clientWidth;
+      if (!clientWidth) return;
+      docEl.style.fontSize = 16 * (clientWidth / 320) + 'px';
+    };
+ 
+  if (!doc.addEventListener) return;
+  win.addEventListener(resizeEvt, recalc, false);
+  doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
+	</head>
+	<body>
+		<div class="wrap">
+		<div class="head">订单详情
+	<img src="img/return.png" class="return_img" onClick="javascript:history.back(-1);" alt="" />
+			
+		</div>
+		<!--订单开始-->
+		<div class="finish_state">
+			<img src="img/detail_img2.png" alt="" />
+			<div class="my_state"><span class="my_state_title">待发货</span> <span class="pay_now" style="margin-top: 0;">申请退款</span></div>
+			<div class="my_tip">您的订单已经提交成功，我们正在尽快为
+您安排发货。</div>
+		<div class="clear"></div>
+		</div>
+		<!--收货地址-->
+		<div class="accept_address">
+			<p class="address_title">收货地址</p>
+			<img src="img/address_img.png" class="address_img" alt="" />
+			<div class="my_information">翁晓月  <span class="address_number">15365482214</span></div>
+			<div class="address_address">广西南宁市兴宁区，昌泰大厦十二宫车安了个赛后
+给她同城小鸟技术。</div>
+<div class="clear"></div>
+		</div>
+		<!--分栏开始-->
+		<div class="one_process">
+			<p class="address_title">商品信息</p>
+		<ul class="my_ul">
+			<li class="my_li">
+				<img src="img/my_img.png" alt="" class="my_img" />
+				<div class="my_product">
+				<div class="my_title">美旋风天然活化能乳液，完美对抗衰老暗沉</div>
+				<div class="my_guige">红色30ml</div>
+				
+</div>
+			<div class="my_money">
+				<span>￥29.00</span><br />
+				<span class="my_number">×2</span>
+			</div>
+				<div class="clear"></div>
+			</li>
+			<li class="my_li">
+				<img src="img/my_img.png" alt="" class="my_img" />
+				<div class="my_product">
+				<div class="my_title">美旋风天然活化能乳液，完美对抗衰老暗沉</div>
+				<div class="my_guige">红色30ml</div>
+				
+</div>
+			<div class="my_money">
+				<span>￥29.00</span><br />
+				<span class="my_number">×2</span>
+			</div>
+				<div class="clear"></div>
+			</li>
+		
+		</ul>
+		<div class="my_pay_column">
+		<span class="total_thing">共<span class="number">4</span>件商品   运费￥20.00   合计: <span class="total_money">￥58.00</span></span>
+		</div>
+		<div class="my_pay_column">
+		<span class="total_thing">实际支付: <span class="total_money">￥58.00</span></span>
+		</div>
+		</div>
+		<div class="item_detail">
+		<p class="address_title">商品信息</p>
+		<ul>
+				<li class="item_li">订单编号：<span class="item_span">2016052811</span></li>
+				<li class="item_li">下单时间：<span class="item_span">2016-08-17 10:36:39</span></li>
+				<li class="item_li">支付方式：<span class="item_span">微信支付</span></li>
+				<li class="item_li">运单编号：<span class="item_span">201605281165485236</span><span class="wuliu_detail">物流详情</span></li>
+				<li class="item_li">物流公司：<span class="item_span">圆通快递</span></li>
+				<li class="item_li">发货时间：<span class="item_span">2016-08-17 10:36:39</span></li>
+				<li class="item_li">收货时间：<span class="item_span">2016-08-17 10:36:39</span></li>
+		</ul>
+		</div>
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$(".choose_li").click(function(){
+				$(this).addClass("choose_li_active").siblings(".choose_li").removeClass("choose_li_active");
+			})
+		})
+	</script>
+</html>

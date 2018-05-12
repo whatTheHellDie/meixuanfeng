@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;padding:0px;font-family:"微软雅黑";font-size: 0.75rem;}
+a{text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+ul li{list-style-type:none;margin: 0; padding: 0;}
+img{border:0px;display:block;}
+.clear{clear:both;}
+input{outline: 0;}
+body{background:#fff;position: relative;min-height: 30rem;}
+img{display: inline-block;}
+.shade{width:100%;height:100%;background:rgba(0,0,0,0.6);position:fixed;top:0px;left:0px;
+			z-index:2;display:none;padding-top: ;}
+.wrap{width:100%;min-width:320px;margin:0px auto 0px;    padding-bottom: 6.25rem;padding-top: 4.8125rem;}
+.return_img{width: 0.75rem;height: 1.28125rem;position: absolute;top: 0.75rem;left: 1.09375rem;}
+.head{color: #fff;text-align: center;width: 100%;height:2.8125rem ;line-height: 2.8125rem;font-size:0.9375rem;background: #220B35;position: relative;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+
+
+
+
+
+/*我的订单*/
+.choose_column{z-index:2;background: #fff;position: fixed;top:2.8125rem ;left: 0;}
+.choose_ul li{float: left;color: #5a5a5a;width: 2.625rem;padding: 0 0.6875rem;text-align: center;height: 2rem;line-height: 2rem;}
+.choose_ul li a{color: #5a5a5a;font-size: 0.75rem;display: block;height: 1.9375rem;}
+.choose_li_active a{border-bottom: 0.125rem solid #d50074;}
+.dingdan_state{background: #fff;border-bottom: 0.0625rem solid #e5e4eb;
+padding-left: 0.5625rem;height: 2.8125rem;
+color: #d50074;font-size: 0.75rem;}
+.grey_bg{background: #eee; height: 0.71875rem;}
+.this_state{ min-height: 1.15625rem;display: inline-block;    margin-top: 0.375rem;}
+.pay_now{margin-top: 0.375rem;margin-left: 0.84375rem;border-radius:0.3125rem;width: 3.5625rem;height: 1.15625rem;display: inline-block;background: #d50074;line-height: 1.15625rem;text-align: center;color: #fff;}
+.my_time{color: #5a5a5a;font-size: 0.75rem;margin-top: 0.0625rem;}
+.turn_right{position: relative;top:0.46875rem;width: 0.53125rem;height: 0.875rem;float: right;margin-right: 0.71875rem;margin-top: 0.59375rem;}
+.my_ul{background: #fff;}
+.my_li{border-bottom: 0.0625rem solid #d7d6db;}
+.my_img{width: 3.3125rem;height:3.3125rem;margin: 0.3125rem 0.4375rem;float: left;}
+.my_product{z-index:1;height: 3.9375rem;width: 9.8125rem;float: left;font-size: 0.75rem;position: relative;}
+.my_title{font-size: 0.75rem;color: #5a5a5a;margin-top: 0.3125rem;}
+.my_guige{color: #a1a1a1;position: absolute;bottom:0.375rem;}
+.my_money{text-align: right;float: right;margin-right: 0.75rem;margin-top: 0.65625rem;color: #5a5a5a;}
+.my_number{color: #5a5a5a;}
+.my_pay_column{background: #fff;height: 2rem;border-bottom: 0.84375rem solid #eee;}
+.total_thing{color: #5a5a5a;}
+.number{color: #d50074;}
+.total_money{color: #d50074;font-weight: 800;}
+.del{width: 0.9375rem;height: 0.9375rem;margin-top: 0.5625rem;margin-left: 0.625rem;}
+
+.total_thing{float: right;margin-top: 0.5rem;margin-right: 0.53125rem;}

@@ -1,0 +1,146 @@
+<html style="font-size: 16px;">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="good_detail.css">
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/hhSwipe.js" type="text/javascript" charset="utf-8"></script>
+<style type="text/css">
+	td{ border-bottom: 1px solid #048F74;}
+	
+</style>
+<script type="text/javascript">
+	(function (doc, win) {
+  var docEl = doc.documentElement,
+    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+    recalc = function () {
+      var clientWidth = docEl.clientWidth;
+      if (!clientWidth) return;
+      docEl.style.fontSize = 16 * (clientWidth / 320) + 'px';
+    }; 
+ 
+  if (!doc.addEventListener) return;
+  win.addEventListener(resizeEvt, recalc, false);
+  doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
+	</head>
+	<body>
+		<div class="wrap" style="min-height: 568px;">
+		<div class="head">
+			
+			商品详情
+			<img src="img/return.png" class="return_img" onclick="javascript:history.back(-1)" alt="" />
+			<img src="img/cart_white.png" style="    position: absolute;
+    top: 0.7rem;
+    right: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;" alt="" />
+		</div>
+		 <!--轮播图开始--> 
+		  <div style="">
+			<article>
+			  <div class="scroll_box" id="scroll_img" style="visibility: visible;">
+				<ul class="scroll_wrap" style="width: 1280px;">
+				  <li data-index="0" style="width: 320px; left: 0px; transition-duration: 300ms; transform: translate(-320px, 0px) translateZ(0px);">
+					<a href="#">
+						<img class="scroll_img" src="img/lunbopng.png" width="100%">
+					</a>
+					</li>
+				  <li data-index="1" style="width: 320px; left: -320px; transition-duration: 300ms; transform: translate(0px, 0px) translateZ(0px);">
+					<a href="#"><img class="scroll_img" src="img/lunbopng.png" width="100%"></a></li>
+				  <li data-index="2" style="width: 320px; left: -640px; transition-duration: 0ms; transform: translate(320px, 0px) translateZ(0px);"><a href="#"><img class="scroll_img" src="img/lunbopng.png" width="100%"></a></li>
+				  <li data-index="3" style="width: 320px; left: -960px; transition-duration: 300ms; transform: translate(-320px, 0px) translateZ(0px);"><a href="#"><img class="scroll_img" src="img/lunbopng.png" width="100%"></a></li>
+				  </ul>
+				</div>
+			  
+			 <!--scroll-->
+			 <div class="scroll relative">
+				  <ul class="scroll_position" id="scroll_position">
+					  <li class=" "><a href="javascript:void(0);"></a></li>
+					  <li class="on"><a href="javascript:void(0);"></a></li>
+					  <li class=" "><a href="javascript:void(0);"></a></li>
+					  <li class=" "><a href="javascript:void(0);"></a></li>
+				  </ul>
+			 </div>
+			  <!--scroll-->
+			</article>
+		
+		</div>
+		<!--轮播图结束-->
+		<div class="title_wrap">
+		<div class="shop_title">Cloud 9/九朵云韩国原装正品</div>
+		<div class="shop_second_title">此处写商品描述  此处写商品描述  此处写商品描述</div>
+		</div>
+		<div class="price_now">￥35.00 <span class="xiaoliang">月销量：100件 </span></div>
+		<div class="guige">
+			<span class="guige_span">规格</span>
+		<ul class="guige_ul">
+			<li class="guige_li guige_li_active">75ml</li>
+			<li class="guige_li">100ml</li>
+			
+			<div class="clear"></div>
+		</ul>
+		<div class="clear"></div>
+		
+		</div>
+		<div class="item_number">
+			<span class="item_number_number">数量</span><span class="add_number">-</span><input type="text" class="number_item" value="1"/><span class="add_number">+</span> <span style="position: relative;top: -4px;">件</span>
+		</div>
+		<div class="img_arti_detail">图文详情</div>
+		<div><img src="img/good_detail.png" width="100%" alt="" /></div>
+		</div>
+		<div class="shop_choose">
+			<div class="add_cart"><img src="img/join_cart.png" class="join_cart"/></div><div class="buy_now"><a href="shopping_car.html"><img src="img/buy_now.png"/></a></div>
+			<div class="clear"></div>
+		</div>
+		
+	
+		<script type="text/javascript">
+		$(".join_cart").click(function(){
+			$(this).attr("src","img/alredy_join.png")
+			alert("加入成功")
+		})
+		//规格标题大小
+		$(".guige_span").height($(".guige").height())
+		//选择规格
+		$(".guige_li").click(function(){
+			$(this).addClass("guige_li_active").siblings(".guige_li_active").removeClass("guige_li_active");
+		})
+		
+				//adv广告轮播
+ 	var slider = Swipe(document.getElementById('scroll_img'), {
+		auto: 1500,
+		continuous: true,
+		callback: function(pos) {
+			var i = bullets.length;
+			while (i--) {
+				bullets[i].className = ' ';
+			}
+			bullets[pos].className = 'on';
+		}
+	});
+	var bullets = document.getElementById('scroll_position').getElementsByTagName('li');
+	
+	$(function(){
+	//中间滚动栏js
+	$(".fenlei").scrollLeft($(".fenlei_img_wrap").width()/2);
+	window.onload=function(){
+	var fenlei_img=parseFloat($(".fenlei_img_wrap").outerWidth())+parseFloat($(".fenlei_img_wrap").css("margin-right"))+8;
+	
+	var fenlei_lenth=$(".fenlei_img_wrap").length;
+	var fenleiWrap=Math.ceil(fenlei_lenth*fenlei_img);
+	
+
+	$(".scroll_fenlei_box").width(fenleiWrap);
+	}
+	
+	$(".wrap").css("min-height",$(window).height());
+	})
+	
+		</script>
+	
+	
+
+</body></html>

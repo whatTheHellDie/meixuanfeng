@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="shenfenzheng.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	(function (doc, win) {
+  var docEl = doc.documentElement,
+    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+    recalc = function () {
+      var clientWidth = docEl.clientWidth;
+      if (!clientWidth) return;
+      docEl.style.fontSize = 16 * (clientWidth / 320) + 'px';
+    };
+ 
+  if (!doc.addEventListener) return;
+  win.addEventListener(resizeEvt, recalc, false);
+  doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
+	</head>
+	<body>
+		<div class="wrap">
+		<div class="head">身份证管理
+	<img src="img/return.png" class="return_img" onClick="javascript:history.back(-1);" alt="" />
+			
+		</div>
+					<div class="true_name">
+						<div class="true_name_title">真实姓名：</div>
+						<input type="text" placeholder="请输入您的真实姓名" class="true_name_input" />
+						<img src="img/turn_right.png" class="turn_img"/>
+					</div>
+					<div class="true_name">
+						<div class="true_name_title">身份证号码：</div>
+						<input type="text" placeholder="请输入您的身份证号码" class="true_name_input" />
+						<img src="img/turn_right.png" class="turn_img"/>
+					</div>
+					<div class="true_name">
+						<div class="true_name_title" style="margin-bottom: 1.3125rem;">上传身份证照片：</div>
+						<img src="img/turn_right.png" class="turn_img"/>
+						<div class="zhengmian">
+							<img src="img/shenfen.png" class="add_shenfen" id="imgmy"/>
+							<div>正面</div>
+							<form action="" method="post">
+								<input type=file name=j id="cardpic" style="display: none;"  > 
+							</form>
+						</div>
+						<div class="beimian">
+							<img src="img/shenfen.png" class="add_shenfen" id="imgmy1" />
+							<div>背面</div>
+							<form action="" method="post">
+								<input type=file name=j id="cardpic1" style="display: none;"  > 
+							</form>
+						</div>
+						
+						<div class="clear"></div>
+						
+					</div>
+					<div class="save">保存</div>
+			</div>
+			
+			</div>
+	</body>
+	<script type="text/javascript">
+	$(function(){
+			$(".turn_img").click(function(){
+				$(this).siblings("input").focus();
+			})
+	})
+
+		window.onload=function(){
+			
+			
+			$("body").css("min-height",$(window).height());
+			$(".man").click(function(){
+				if($(this).find("img").attr("src")=="img/man.png")
+				$(this).find("img").attr("src","img/man_active.png").parent().siblings(".girl").find(".girl_img").attr("src","img/girl.png");
+				else{
+				$(this).find("img").attr("src","img/man.png")
+			}
+			})
+			$(".girl").click(function(){
+				if($(this).find("img").attr("src")=="img/girl.png")
+				$(this).find("img").attr("src","img/girl_active.png").parent().siblings(".man").find("img").attr("src","img/man.png");
+				else{
+				$(this).find("img").attr("src","img/girl.png");
+			}
+			})
+			
+		}
+	</script>
+	 <script type="text/javascript">
+	 	$(".add_shenfen").eq(0).click(function(){
+	 		$("#cardpic").trigger("click");
+	 	})
+	 	$(".add_shenfen").eq(1).click(function(){
+	 		$("#cardpic1").trigger("click");
+	 	})
+	 	 window.onload=function(){
+	 
+	 }
+        	window.onload=(function () {
+    var viewFiles = document.getElementById("cardpic");
+    
+    var viewImg = document.getElementById("imgmy");
+    function viewFile (file) {
+        //通过file.size可以取得图片大小
+        var reader = new FileReader();
+        reader.onload = function( evt ){
+            viewImg.src = evt.target.result;
+            
+        }
+        reader.readAsDataURL(file);
+    }
+    viewFiles.addEventListener("change", function () {
+        //通过 this.files 取到 FileList ，这里只有一个
+        viewFile(this.files[0]);
+        $("#imgmy").css("background","#fff");
+    }, false);
+    
+})();
+		
+			window.onload=(function () {
+    var viewFiles1 = document.getElementById("cardpic1");
+    
+    var viewImg1 = document.getElementById("imgmy1");
+    function viewFile (file) {
+        //通过file.size可以取得图片大小
+        var reader = new FileReader();
+        reader.onload = function( evt ){
+            viewImg1.src = evt.target.result;
+            
+        }
+        reader.readAsDataURL(file);
+    }
+    viewFiles1.addEventListener("change", function () {
+        //通过 this.files 取到 FileList ，这里只有一个
+        viewFile(this.files[0]);
+        $("#imgmy1").css("background","#fff");
+    }, false);
+    
+})();
+       </script>
+</html>

@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;padding:0px;font-family:"微软雅黑";}
+a{text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+ul li{list-style-type:none;}
+img{border:0px;display:block;}
+.clear{clear:both;}
+body{background:#fff;position: relative;}
+i{display: inline-block;}
+.shade{width:100%;height:100%;background:rgba(0,0,0,0.6);position:fixed;top:0px;left:0px;
+			z-index:2;display:none;}
+
+header{background: url(img/top_bg.png);width: 100%;height: 160px;min-width: 990px;}
+.bg_huawen{position: absolute;width: 178px;top: 0px;left: 0;z-index: 2;overflow: hidden;}
+.bg_huawen2{position: absolute;width: 380px;top: -3px;right: 0;z-index: 2;overflow: hidden;}
+.bg_huawen img{float: right;}
+.header_wrap{max-width: 1200px;min-width:990px;width:100%;margin: 0 auto; height: 160px;}
+.logo{padding-top: 35px;width: 360px;height: 95px;padding-left: 29px;display: inline-block;}
+
+
+.phone_number{float: right;margin-top: 93px;}
+.phone_icon{width: 37px;height: 34px;background: url(img/dianhua.png);
+font-size: 18px;color: #FFF;
+}
+.number{color: #fff;position: relative;margin-left: 13px;top: -9px;}
+.phone_line{height: 22px;width: 2px;background:url(img/phone_line.png) ;margin:0 25px;position: relative;top: -6px;}
+.number_logo{display:inline-block;width: 73px;height: 20px;position: relative;top: -6px;}
+.nav_bg{z-index:2;width: 100%;position: absolute;top: 160px;height: 60px;background: #374370;opacity: 0.33;}
+.center_bg{    z-index: 1;
+    width: 100%;
+    position: absolute;
+    height: 1080px;}
+.wrap{width:100%;min-width:990px;max-width: 1200px;height: 1080px;  background: url(img/wrap_bg.png);margin: 0 auto;
+    position: relative;    z-index: 5;}
+    .nav{width: 100%;height: 60px;position: absolute; top: 0px;z-index: 5;margin: 0 auto;}
+    .nav_ul{    width: 955px;
+    margin: 0 auto;background: url(img/wrap_bg.png);}
+    .nav_ul .nav_li{float: left;width: 135px;height: 60px;z-index: 1000;
+    border-right: 1px solid #606690; text-align: center;
+    line-height: 60px;font-size: 14px;position: relative;}
+    .shouye{width: 136px !important;border:none !important;height: 60px;background: url(img/shouye.png) !important;}
+     .shouye a{color: #fff !important; display: block;}
+     .shouye a:hover{color: #fff !important;}
+     .nav_ul .nav_li a{color: #fff;display: block;}
+     .nav_ul .nav_li a:hover{color: #ff0090 ; position: relative;}
+     .gg{color: #ff0090 !important;}
+     .xiala_img{display:none;background: url(img/xiala.png);width: 23px;height: 12px;position: absolute;    top: 42px;
+    left: 56px;}
+   .nav_second_ul{display:none;width: 89px;background-image: -moz-linear-gradient( 90deg, rgb(43,6,28) 0%, rgb(212,0,126) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(43,6,28) 0%, rgb(212,0,126) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(43,6,28) 0%, rgb(212,0,126) 100%);margin-left: 22px;}
+   .nav_second_li{width: 100%;width: 89px;height: 37px;line-height: 37px;border-bottom: 2px solid #b5026c;}
+     .nav_second_li2{border-color: #8c0053;}
+     .nav_second_li3{border-color: #4d0020;}
+     .nav_second_li a:hover{color: #fff !important;}
+
+/*新闻中心开始*/
+.news_wrap{width: 955px;height: 735px; background: url(img/new_bg.png);margin: 0 auto;margin-top: 15px;font-family: simhei !important;}
+.left_list{float: left;}
+.left_list_ul{width: 236px;height: 735px; background: url(img/new_bg.png);}
+.left_title_li_title{color: #fff;background: url(img/new_list_hover.png) !important;
+line-height: 51px;text-align: center; font-size: 18px;
+font-family: simhei !important; }
+.left_title_li{border-bottom: 2px solid #5a5a5a;line-height: 60px;text-align: center; font-size: 14px;font-family: simhei !important;}
+.left_title_li a{color: #fff; display: block;}
+.left_title_li a:hover{color:#d400cd;}
+.left_title_li a:focus{color:#d400cd;}
+.left_title_li_active{color: #d400cd !important;}
+
+.right_list{float: left;width: 719px; overflow: auto;  
+    height: 735px;}
+
+
+/*简介*/
+.artical{font-family: simsun !important;margin: 0 47px; padding-top: 73px;width: 608px;}
+.content_title{font-family: simhei !important;font-size: 20px;color: #fff;padding-bottom: 37px;}
+.my_content{font-family: simsun !important;font-size: 16px;color: #fff;text-indent: 32px;}
+
+
+.foot{width: 100%;background:url(img/wrap_bg.png);height: 212px;    position: absolute;
+       bottom: 0px;z-index: 5;text-align: center;color: #fff;}
+.foot_logo{width: 73px;height: 79px;margin: 23px auto 19px;}
+.phone{font-size: 13px;margin-top: 15px;}
+.address{font-size: 14px;margin-top: 11px;}
+.bottom-line{width: 40%; display: inline-block;height: 2px;background: url(img/bottom_line.png);position: relative;    top: -5px;}
+
+

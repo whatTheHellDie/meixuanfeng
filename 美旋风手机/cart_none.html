@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="cart_none.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/hhSwipe.js" type="text/javascript" charset="utf-8"></script>
+<style type="text/css">
+	td{ border-bottom: 1px solid #048F74;}
+	
+</style>
+<script type="text/javascript">
+	(function (doc, win) {
+  var docEl = doc.documentElement,
+    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+    recalc = function () {
+      var clientWidth = docEl.clientWidth;
+      if (!clientWidth) return;
+      docEl.style.fontSize = 16 * (clientWidth / 320) + 'px';
+    };
+ 
+  if (!doc.addEventListener) return;
+  win.addEventListener(resizeEvt, recalc, false);
+  doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
+	</head>
+	<body>
+		<div class="wrap">
+		<div class="head">
+			<img src="img/top_left.png" alt="" class="top_left" />
+			<img src="img/top_right.png" alt="" class="top_right" />
+			
+			<div class="search_box_bigwrap">
+			<div class="search_box_wrap">
+			<input type="text" placeholder="输入您想要的商品" class="search_box" />
+			<img src="img/sousuo.png" class="search_box_img" alt="" />
+			</div>
+			</div>
+			<img src="img/dianhua.png" alt="" class="dianhua" />
+			
+		</div>
+		<!--购物车无商品-->
+		<div class="cart_none">
+			<div class="cart_none_logo_wrap"><img src="img/cart_none_logo.png" class="cart_none_logo" alt="" /></div>
+			<div class="none_to_add">您还没有添加商品</div>
+			<div class="turn_to_img_wrap"><a href="shop.html"><img src="img/turn_to_buy.png" class="turn_to_img" alt="" /></a></div>
+		</div>
+		
+		</div>
+		
+		<!--foot start-->
+	<div class="foot">
+		<ul class="foot_ul">
+			<li class="foot_li">
+				<a href="index.html" class="foot_a">
+					<div class="foot_img">
+						<img src="img/1_active.png"/>
+					</div>
+					<p class="foot_title_p" >
+						首页
+					</p>
+				</a>
+			</li>
+			<li class="foot_li" style="float: ;">
+				<a href="shop.html" class="foot_a">
+					<div class="foot_img">
+						<img src="img/2.png"/>
+					</div>
+					<p class="foot_title_p">
+						商城
+					</p> 
+				</a>
+			</li>
+			<li class="foot_li ">
+				<a href="shopping_car.html" class="foot_a">
+					<div class="foot_img">
+						<img src="img/3_active.png"/>
+						
+					</div>
+					<p class="foot_title_p"  style="color: #a2046a;">
+						购物车
+					</p>
+				</a>
+			</li>
+			<li class="foot_li" >
+				<a href="person_center.html" class="foot_a">
+					<div class="foot_img">
+						<img src="img/4.png"/>
+					</div>
+					<p class="foot_title_p">
+						我的
+					</p>
+				</a>
+			</li>
+			<div style="clear:both;"></div>
+		</ul>
+	</div>
+	<!--foot end-->
+	<script type="text/javascript">
+	$(function(){
+		
+		$(".duihao").click(function(){
+			
+			if($(this).attr("src")=="img/duihao.png"){
+				$(this).attr("src","img/duihao_active.png");
+			}
+			else{
+				$(this).attr("src","img/duihao.png");
+			}
+			//判断对号变色
+			var active_num=0
+			$(".duihao").each(function(i){
+				
+				if($(this).attr("src")=="img/duihao_active.png"){
+					active_num++;
+					
+				}
+			})
+			
+			if(active_num>0){
+			$(".checkout_duihao_img").attr("src","img/duihao_active.png");
+
+			}else{
+				$(".checkout_duihao_img").attr("src","img/duihao.png");
+			}
+			
+		})
+		})
+	</script>
+	</body>
+	
+</html>

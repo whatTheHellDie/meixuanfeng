@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="login.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<style type="text/css">
+	
+</style>
+<script type="text/javascript">
+	
+</script>
+	</head>
+	<body>
+		<div class="bg_huawen"><img src="img/bg_huawen1.png" width="100" alt=""  /></div>
+		<div class="bg_huawen2"><img src="img/bg_huawen2.png" width="302" alt=""  /></div>
+		<div class="bg_huawen3"><img src="img/bg_huawen3.png" width="55" alt=""  /></div>
+		<!--头部开始-->
+		<header>
+			<div class="header_wrap">
+				<div class="logo">
+					<img src="img/login_logo.png" alt="logo" />
+				</div>
+			
+			</div>
+			
+			
+		</header>
+		
+		<div class="wrap">
+			
+			<div class="center_bg">
+				<img src="../美旋风商城/img/login_bg.png" alt="" class="left_bg" />
+			</div>
+			<div class="login_box">
+				<p class="login_title">用户登录</p>
+				<p class="register"><a href="#">注册</a>
+					<div class="clear"></div>
+				</p>
+				
+					<div class="user_wrap" style="margin-top: 4.1%;" ><lable for="username" class="user_label">用户名</lable><input type="text"  id="username" value="" /></div>
+					<div class="user_wrap user_wrap_top"  ><lable for="username" class="user_label">密码</lable><input type="password"  id="userpassword" value="" /></div>
+					<div class="user_wrap user_wrap_top" style="font-size: 0px;"  >
+						<lable for="username" class="user_label" style="float: left; line-height: 37px;">验证码</lable>
+						<input type="text" style="float: left;"  id="usercheck" value="" />
+					<div class="check_img" style="float: left"></div>
+					<img src="img/refresh.png" class="refresh" alt="" />
+					<div class="clear"></div>
+					
+					</div>
+					<div class="user_wrap" style="margin-top: 4.267%;">
+					<div class="remeber_password"> <input type="checkbox" class="check_box" name="" id="" value="" /><span style="font-size: 16px; color: #8a8a8c;margin-left: 1.3%;">记住密码</span></div>
+					<div class="login_button">登录</div>
+					
+				
+			</div>
+			<div class="clear"></div>
+			<div class="three_button">
+						<a href="#"><img src="img/three_button.png" class="box" style="margin-left: 0px;"/></a>
+						<a href="#"><img src="img/three_button2.png" class="box"/></a>
+						<a href="#"><img src="img/three_button3.png" class="box"/></a>
+					</div>
+			</div>
+			
+			<!--底部栏-->
+			<div class="foot">
+				<img src="img/foot_logo.png" alt="logo" class="foot_logo" />
+				<div class="name"><span class="bottom-line"></span><span style="padding: 0 5px;font-size: 15px;">广西美炫风化妆品有限公司</span><span class="bottom-line"></span></div>
+				<div class="phone">电话：261651265</div>
+				<div class="address">公司地址：沙拉几个箱子了内最按键和</div>
+			</div>
+			<script type="text/javascript">
+			$(function(){
+				$(window).resize(function(){
+					if($(window).width()>1480){
+					var hh=$(window).width()*0.455;
+					$(".wrap").css("min-height",hh);
+					}else{var hhhh=1300*0.5;
+					$(".wrap").css("min-height",hhhh);}
+					
+					var lh=$(window).width()*0.28;
+				$(".login_box").height(lh);
+				$(".center_bg").height($(".login_box").height());
+				
+				var user_height=$(".login_box").width()*0.09276;
+				$("#username").height(user_height);
+				$("#userpassword").height(user_height);
+				$("#usercheck").height(user_height);
+				var user_height2=user_height+2
+				$(".check_img").height(user_height2);
+				var sss=parseFloat($(".user_label").width())+0.04823*$(".login_box").width();
+			
+				$(".remeber_password").css("margin-left",sss);
+				var lbh=$(".login_box").width()*0.1113;
+				$(".login_button").height(lbh);
+				var lbhs=lbh+"px";
+				
+				$(".login_button").css("line-height",lbhs);
+				var lbw=parseFloat("54")+0.68025*$(".login_box").width();
+				
+				$(".login_button").width(lbw);
+				var lbmt=0.08534*$(".login_box").width();
+				$(".login_button").css("margin-top",lbmt);
+				
+				var tbpl=parseFloat("54")+$(".login_box").width()*0.1511;
+				
+				var tbpls=tbpl+"px";
+				$(".three_button").css("margin-left",tbpl);
+				})
+			})
+			window.onload=function(){
+				if($(window).width()>1480){
+					var hh=$(window).width()*0.4555;
+					$(".wrap").css("min-height",hh);
+					}
+				else{var hhhh=1300*0.5;
+					$(".wrap").css("min-height",hhhh);}
+				var lh=$(window).width()*0.28;
+				$(".login_box").height(lh);
+				$(".center_bg").height($(".login_box").height());
+				
+				var user_height=$(".login_box").width()*0.09276;
+				$("#username").height(user_height);
+				$("#userpassword").height(user_height);
+				$("#usercheck").height(user_height);
+				var user_height2=user_height+2
+				$(".check_img").height(user_height2);
+				var sss=parseFloat($(".user_label").width())+0.04823*$(".login_box").width();
+			
+				$(".remeber_password").css("margin-left",sss);
+				var lbh=$(".login_box").width()*0.1113;
+				$(".login_button").height(lbh);
+				var lbhs=lbh+"px";
+				
+				$(".login_button").css("line-height",lbhs);
+				var lbw=parseFloat("54")+0.68025*$(".login_box").width();
+				
+				$(".login_button").width(lbw);
+				var lbmt=0.08534*$(".login_box").width();
+				$(".login_button").css("margin-top",lbmt);
+				
+				var tbpl=parseFloat("54")+$(".login_box").width()*0.1511;
+				
+				var tbpls=tbpl+"px";
+				$(".three_button").css("margin-left",tbpl);
+				
+			}
+			</script>
+			<script type="text/javascript">
+
+$(function(){
+	//背景花纹定位
+	if(($(window).width()<=1920)){
+	var huawen_w=1920-$(window).width()
+	
+	var huawen=huawen_w/2;
+	
+	var huawen1=$(".bg_huawen").width()-huawen;
+
+	var huawen2=$(".bg_huawen2").width()-huawen;
+	$(".bg_huawen").css("width",huawen1);
+	$(".bg_huawen2").css("width",huawen2);
+	}
+	else{$(".bg_huawen").css("width","100%")}
+	//导航栏下拉经过
+	$(".xiala_img").hover(function(){
+		$(this).siblings("a").addClass("gg");
+	}).parent().mouseleave(function(){
+		$(this).find("a").removeClass("gg");
+	})
+	  //轮播图
+	var oFocus=$('#focus'),
+	
+		oRight=oFocus.find('.right'),
+		
+		oLeft=oFocus.find('.left'),
+		
+		aRLi=oRight.find('li'),
+		
+		aLLi=oLeft.find('li'),
+		
+		index=0,
+		
+		timer = null;
+		
+	aRLi.mouseover(function(){
+		index=$(this).index()
+		$(this).addClass('active').siblings().removeClass();
+		aLLi.eq(index).addClass('active').siblings().removeClass();
+		aLLi.eq(index).stop().animate({'opacity':1},300).siblings().stop().animate({'opacity':0},300);
+		if(index==1){
+			$(".color_bg").css("background","#Fef684");
+		}
+		else if(index==2){
+			$(".color_bg").css("background","#ef6644");
+		}
+		else if(index==3){
+			$(".color_bg").css("background","#28262b");
+		}
+		else if(index==0){
+			$(".color_bg").css("background","#ffc001");
+		}
+		else{}
+		stopFoucs();
+	}).mouseout(function(e) {
+        timer = setInterval(function(){
+		startFocus();
+	},2500);
+    });
+	
+	oLeft.mouseenter(function(){
+		startFocus();
+	});
+	timer = setInterval(function(){
+		startFocus();
+	},2500);
+	
+	function startFocus(){
+		index++;
+		index = index > aRLi.size()-1 ? 0 :index;
+
+		aLLi.eq(index).addClass('active').siblings().removeClass();
+		aLLi.eq(index).stop().animate({'opacity':1},300).siblings().stop().animate({'opacity':0},300);
+		aRLi.eq(index).addClass('active').siblings().removeClass();
+		if(index==1){
+			$(".color_bg").css("background","#Fef684");
+		}
+		else if(index==2){
+			$(".color_bg").css("background","#ef6644");
+		}
+		else if(index==3){
+			$(".color_bg").css("background","#28262b");
+		}
+		else if(index==0){
+			$(".color_bg").css("background","#ffc001");
+		}
+		else{}
+	}
+	function stopFoucs(){
+		clearInterval(timer);
+	}
+})
+</script>
+		<script type="text/javascript">
+			$(function(){
+				$(".anorher_li").mouseover(function(){
+					$(this).find(".xiala_img").show();
+					$(this).find(".nav_second_ul").show();
+				}).mouseout(function(){
+					$(this).find(".xiala_img").hide();
+					$(this).find(".nav_second_ul").hide();
+				})
+			})
+		</script>
+		<script type="text/javascript">
+$(function(){
+    var page = 1;
+    var i = 1; //每版放4个图片
+    //向后 按钮
+    $("span.next").click(function(){    //绑定click事件
+	     var $parent = $(this).parents("div.v_show");//根据当前点击元素获取到父元素
+		 var $v_show = $parent.find("div.v_content_list"); //寻找到“视频内容展示区域”
+		 var $v_content = $parent.find("div.v_content"); //寻找到“视频内容展示区域”外围的DIV元素
+		 var v_width = $v_content.width() ;
+		  var v_one=$(".v_content_list ul li").eq(1).outerWidth(); //一个li加内外边距的宽度
+		 var len = $v_show.find("li").length-2;
+		 var page_count = 1 ;   //
+		 if( !$v_show.is(":animated") ){    //判断“视频内容展示区域”是否正在处于动画
+			  if( page == len ){  //已经到最后一个版面了,如果再向后，必须跳转到第一个版面。
+				$v_show.animate({ left : '0px'}, "slow"); //通过改变left值，跳转到第一个版面
+				page = 1;
+				
+			  }else{
+				$v_show.animate({ left : '-='+v_one }, "slow");  //通过改变left值，达到每次换一个版面
+				page++;
+				
+			 }
+			
+		 }
+   });
+    //往前 按钮
+    $("span.prev").click(function(){
+	     var $parent = $(this).parents("div.v_show");//根据当前点击元素获取到父元素
+		 var $v_show = $parent.find("div.v_content_list"); //寻找到“视频内容展示区域”
+		 var $v_content = $parent.find("div.v_content"); //寻找到“视频内容展示区域”外围的DIV元素
+		 var v_width = $v_content.width();  
+		 var v_one=$(".v_content_list ul li").eq(1).outerWidth(); //一个li加内外边距的宽度
+		  var len = $v_show.find("li").length-3;
+		  var gg=len*v_one;
+		
+		 if( !$v_show.is(":animated") ){    //判断“视频内容展示区域”是否正在处于动画
+		 	 if( page == 1 ){  //已经到第一个版面了,如果再向前，必须跳转到最后一个版面。
+				$v_show.animate({ left : '-='+gg }, "slow");
+				page = len+1;
+			}else{
+				$v_show.animate({ left : '+='+v_one }, "slow");
+				page--;
+			}
+			$parent.find("span").eq((page-1)).addClass("current").siblings().removeClass("current");
+		}
+    });
+});
+
+
+
+</script>
+		
+	</body>
+	
+</html>

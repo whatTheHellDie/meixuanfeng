@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="checkout.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/hhSwipe.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	(function (doc, win) {
+  var docEl = doc.documentElement,
+    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+    recalc = function () {
+      var clientWidth = docEl.clientWidth;
+      if (!clientWidth) return;
+      docEl.style.fontSize = 16 * (clientWidth / 320) + 'px';
+    };
+ 
+  if (!doc.addEventListener) return;
+  win.addEventListener(resizeEvt, recalc, false);
+  doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
+	</head>
+	<body>
+		<div class="wrap">
+		<div class="head">确认订单
+			<img src="img/return.png" class="return_img" alt="" />
+
+		</div>
+		
+		<div class="shop_list">
+			<div class="my_address"><a href="#">
+				<img src="img/address.png" alt="" class="my_address_bg" />
+				<div class="my_address_content">
+					<span class="my_name">章鱼哥</span>
+					<span class="my_number">15266357896</span>
+					<div class="address_address">广西省 南宁市 青秀区 晒额饿啊街道地
+王大厦27楼</div>
+				</div></a>
+			</div>
+				<div class="clear"></div>
+				<div class="grey_space"></div>
+			<ul style="background: #fff;">
+				<li>
+						<div class="chanping_wrap"><img src="img/chanping.png" class="chanping" alt="" /></div>
+						<p class="shop_list_title">正品活泉精华眼霜，淡化细纹正品活泉精华眼霜，淡化细纹</p>
+						<div class="guige">规格：红色；175ml  </div>
+						<div class="my_price">￥203.50</div>
+						<div class="product_number">X2</div>
+						
+						<div class="clear"></div>
+				</li>
+				<li>
+						<div class="chanping_wrap"><img src="img/chanping.png" class="chanping" alt="" /></div>
+						<p class="shop_list_title">正品活泉精华眼霜，淡化细纹正品活泉精华眼霜，淡化细纹</p>
+						<div class="guige">规格：红色；175ml  </div>
+						<div class="my_price">￥203.50</div>
+						<div class="product_number">X2</div>
+						
+						<div class="clear"></div>
+				</li>
+			</ul>
+			
+		</div>
+		<div class="my_yunfei">运费：￥20.00</div>
+			<div class="grey_space"></div>
+			<div class="pay_way">
+				<p class="pay_way_title">支付方式<span class="has_money_title">余额：<span class="has_money">￥500.00</span></span></p>
+			</div>
+			<div class="pay_choose">
+				<ul class="pay_choose_ul">
+					<li class="pay_choose_li">
+					<input type="checkbox" name="pay_choose" class="choose_button" /><img src="img/yue.png" class="pay_choose_img" alt="" />余额支付
+					</li>
+					<li class="pay_choose_li">
+					<input type="checkbox" name="pay_choose" class="choose_button" /><img src="img/weixin.png" class="pay_choose_img" alt="" />微信支付
+					</li>
+					<div class="clear"></div>
+				</ul>
+				
+			</div>
+					<div class="my_yunfei">运费：￥20.00</div>
+			<div class="grey_space"></div>
+			<div class="pay_way">
+				<p class="pay_way_title">给我们留言</p>
+			</div>
+			<div class="give_message"><textarea cols="20" rows="20" placeholder="text" class="give_message_text" >输入您想说的话...</textarea></div>
+			</div>
+			<script type="text/javascript">
+				$(function(){
+					$(".give_message_text").click(function(){
+						if($(this).text()=="输入您想说的话..."){
+							$(this).text("");
+							$(this).css("color","#000000");
+						}
+					})
+				})
+			</script>
+		<!--点击结算，注意是在wrap外面-->
+		<div class="checkout">
+			<div class="checkout_button"><a href="cart_none.html">提交订单</a></div>
+			
+			<div class="total_price"><span class="total_price_title">总计(包含运费)：</span>￥426.00</div>
+			
+			
+			<div class="clear"></div>
+		</div>
+		
+		<!--foot start-->
+	<div class="foot">
+		<ul class="foot_ul">
+			<li class="foot_li">
+				<a href="index.html" class="foot_a">
+					<div class="foot_img">
+						<img src="img/1_active.png"/>
+					</div>
+					<p class="foot_title_p" >
+						首页
+					</p>
+				</a>
+			</li>
+			<li class="foot_li" style="float: ;">
+				<a href="shop.html" class="foot_a">
+					<div class="foot_img">
+						<img src="img/2.png"/>
+					</div>
+					<p class="foot_title_p">
+						商城
+					</p> 
+				</a>
+			</li>
+			<li class="foot_li ">
+				<a href="shopping_car.html" class="foot_a">
+					<div class="foot_img">
+						<img src="img/3_active.png"/>
+						
+					</div>
+					<p class="foot_title_p"  style="color: #a2046a;">
+						购物车
+					</p>
+				</a>
+			</li>
+			<li class="foot_li" >
+				<a href="person_center.html" class="foot_a">
+					<div class="foot_img">
+						<img src="img/4.png"/>
+					</div>
+					<p class="foot_title_p">
+						我的
+					</p>
+				</a>
+			</li>
+			<div style="clear:both;"></div>
+		</ul>
+	</div>
+	<!--foot end-->
+	<script type="text/javascript">
+	
+	$(function(){
+		$(".give_message_text").click(function(){
+			
+		})
+		$(".duihao").click(function(){
+			
+			if($(this).attr("src")=="img/duihao.png"){
+				$(this).attr("src","img/duihao_active.png");
+			}
+			else{
+				$(this).attr("src","img/duihao.png");
+			}
+			//判断对号变色
+			var active_num=0
+			$(".duihao").each(function(i){
+				
+				if($(this).attr("src")=="img/duihao_active.png"){
+					active_num++;
+					
+				}
+			})
+			
+			if(active_num>0){
+			$(".checkout_duihao_img").attr("src","img/duihao_active.png");
+
+			}else{
+				$(".checkout_duihao_img").attr("src","img/duihao.png");
+			}
+			
+		})
+		})
+	</script>
+	</body>
+	
+</html>

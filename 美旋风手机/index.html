@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/hhSwipe.js" type="text/javascript" charset="utf-8"></script>
+<style type="text/css">
+	td{ border-bottom: 1px solid #048F74;}
+	
+</style>
+<script type="text/javascript">
+	(function (doc, win) {
+  var docEl = doc.documentElement,
+    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+    recalc = function () {
+      var clientWidth = docEl.clientWidth;
+      if (!clientWidth) return;
+      docEl.style.fontSize = 16 * (clientWidth / 320) + 'px';
+    };
+ 
+  if (!doc.addEventListener) return;
+  win.addEventListener(resizeEvt, recalc, false);
+  doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
+	</head>
+	<body>
+		<div class="wrap">
+		<div class="head">
+			<img src="img/top_left.png" alt="" class="top_left" />
+			<img src="img/top_right.png" alt="" class="top_right" />
+			<img class="head_left" src="img/sousuo.png"></img>
+			<img src="img/logo.png" alt="" class="head_center" />
+			<img src="img/dianhua.png" alt="" class="dianhua" />
+		</div>
+		 <!--轮播图开始--> 
+		  <div style="">
+			<article>
+			  <div class="scroll_box" id="scroll_img">
+				<ul class="scroll_wrap">
+				  <li>
+					<a href="#">
+						<img class="scroll_img" src="img/lunbopng.png" width="100%">
+					</a>
+					</li>
+				  <li>
+					<a href="#"><img class="scroll_img" src="img/lunbopng.png" width="100%" ></a></li>
+				  <li><a href="#"><img class="scroll_img" src="img/lunbopng.png" width="100%" /></a></li>
+				  <li><a href="#"><img class="scroll_img" src="img/lunbopng.png" width="100%" /></a></li>
+				  </ul>
+				</div>
+			  
+			 <!--scroll-->
+			 <div class="scroll relative">
+				  <ul class="scroll_position" id='scroll_position'>
+					  <li class="on"><a href="javascript:void(0);"></a></li>
+					  <li><a href="javascript:void(0);"></a></li>
+					  <li><a href="javascript:void(0);"></a></li>
+					  <li><a href="javascript:void(0);"></a></li>
+				  </ul>
+			 </div>
+			  <!--scroll-->
+			</article>
+		
+		</div>
+		<!--轮播图结束-->
+		<div class="bottom_bg">
+			<div class="fenlei">
+				<ul class="scroll_fenlei_box" style="">
+			<li class="fenlei_img_wrap">
+			<a href="#">
+				<img src="img/img2.png" alt="" class="fenlei_img" />
+				<span class="background_fenlei">彩妆</span>
+			</a>
+			</li>
+			<li class="fenlei_img_wrap">
+			<a href="#">
+				<img src="img/img1.png" alt="" class="fenlei_img" />
+				<span class="background_fenlei">护肤品</span>
+			</a>
+			</li>
+			<li class="fenlei_img_wrap">
+			<a href="#">
+				<img src="img/img3.png" alt="" class="fenlei_img" />
+				<span class="background_fenlei">护发日化</span>
+			</a>
+			</li>
+			<li class="fenlei_img_wrap">
+			<a href="#">
+				<img src="img/img2.png" alt="" class="fenlei_img" />
+				<span class="background_fenlei">彩妆</span>
+			</a>
+			</li>
+			<li class="fenlei_img_wrap">
+			<a href="#">
+				<img src="img/img1.png" alt="" class="fenlei_img" />
+				<span class="background_fenlei">护肤品</span>
+			</a>
+			</li>
+			<li class="fenlei_img_wrap">
+			<a href="#">
+				<img src="img/img3.png" alt="" class="fenlei_img" />
+				<span class="background_fenlei">护发日化</span>
+			</a>
+			</li>
+			<li class="fenlei_img_wrap">
+			<a href="#">
+				<img src="img/img2.png" alt="" class="fenlei_img" />
+				<span class="background_fenlei">彩妆</span>
+			</a>
+			</li>
+			
+			</ul>
+			</div>
+			<script type="text/javascript">
+					
+					 
+				function scrollNews(){
+					var trueNewh=$(".news_content_li").height()*($(".news_content_li").length-1)-29;
+					if($(".news_content").scrollTop()<trueNewh){
+					var newh=$(".news_content").scrollTop()+$(".news_content_li").height();
+						$(".news_content").animate({scrollTop:newh},200);
+					}
+					else{
+						$(".news_content").animate({scrollTop:'0px'},200);
+					}
+				}
+				window.setInterval("scrollNews()",3500)
+				</script>
+			<div class="news_center">
+				<div class="news_center_title">
+					<img src="img/news_center.png" class="news_center_title_img" alt="" />
+				<ul class="news_content">
+					<li class="news_content_li">化妆品店韩国原装进口化妆品化妆品店韩国原装进口化妆品</a></li>
+					<li class="news_content_li">化妆品特卖大促销</li>
+					<li class="news_content_li">化妆品特卖ss</li>
+					<li class="news_content_li">化妆品特卖zz</li>
+					<li class="news_content_li">化妆品店韩??品。</li>
+					<li class="news_content_li">1</li>
+					<li class="news_content_li">2</li>
+					<li class="news_content_li">3</li>
+					<li class="news_content_li">4</li>
+					<li class="news_content_li">化妆品店韩国原装进口化妆品。</li>
+					<li class="news_content_li">化妆品特卖大促销</li>
+					<li class="news_content_li">化妆品特卖ss</li>
+					<li class="news_content_li">化妆品特卖zz</li>
+					<li class="news_content_li">化妆品店韩??品。</li>
+					<li class="news_content_li">1</li>
+					<li class="news_content_li">2</li>
+					<li class="news_content_li">3</li>
+					<li class="news_content_li">5</li>
+				</ul>
+				</div>
+				<div class="shangping">
+				<div class="shangping_wrap">
+					<img src="img/cuxiao1.png" class="shangping_img" alt="" />
+					<div class="clear"></div>
+				</div>
+				<div class="shangping_wrap" style="margin-left: 0.21875rem;">
+					<img src="img/cuxiao2.png" class="shangping_img" alt="" />
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+				<a href="introduce.html"><img src="img/down1.png" class="down" alt="" /></a>
+				<a href="introduce.html"><img src="img/down2.png" class="down" alt="" /></a>
+				<a href="introduce.html"><img src="img/down3.png" class="down" alt="" /></a>
+				<a href="introduce.html"><img src="img/down4.png" class="down" style="margin-right: 0;" alt="" /></a>
+				<div class="clear"></div>
+				</div>
+				
+			</div>
+			</div>
+		</div>
+		
+		<!--foot start-->
+	<div class="foot">
+		<ul class="foot_ul">
+			<li class="foot_li">
+				<a href="index.html" class="foot_a">
+					<div class="foot_img">
+						<img src="img/1.png"/>
+					</div>
+					<p class="foot_title_p" style="color: #a2046a;">
+						首页
+					</p>
+				</a>
+			</li>
+			<li class="foot_li" style="float: ;">
+				<a href="shop.html" class="foot_a">
+					<div class="foot_img">
+						<img src="img/2.png"/>
+					</div>
+					<p class="foot_title_p">
+						商城
+					</p> 
+				</a>
+			</li>
+			<li class="foot_li ">
+				<a href="shopping_car.html" class="foot_a">
+					<div class="foot_img">
+						<img src="img/3.png"/>
+						
+					</div>
+					<p class="foot_title_p">
+						购物车
+					</p>
+				</a>
+			</li>
+			<li class="foot_li" >
+				<a href="person_center.html" class="foot_a">
+					<div class="foot_img">
+						<img src="img/4.png"/>
+					</div>
+					<p class="foot_title_p">
+						我的
+					</p>
+				</a>
+			</li>
+			<div style="clear:both;"></div>
+		</ul>
+	</div>
+	<!--foot end-->
+		<script type="text/javascript">
+				//adv广告轮播
+ 	var slider = Swipe(document.getElementById('scroll_img'), {
+		auto: 1500,
+		continuous: true,
+		callback: function(pos) {
+			var i = bullets.length;
+			while (i--) {
+				bullets[i].className = ' ';
+			}
+			bullets[pos].className = 'on';
+		}
+	});
+	var bullets = document.getElementById('scroll_position').getElementsByTagName('li');
+	
+	$(function(){
+	//中间滚动栏js
+	$(".fenlei").scrollLeft($(".fenlei_img_wrap").width()/2);
+	window.onload=function(){
+	var fenlei_img=parseFloat($(".fenlei_img_wrap").outerWidth())+parseFloat($(".fenlei_img_wrap").css("margin-right"))+8;
+	
+	var fenlei_lenth=$(".fenlei_img_wrap").length;
+	var fenleiWrap=Math.ceil(fenlei_lenth*fenlei_img);
+	
+
+	$(".scroll_fenlei_box").width(fenleiWrap);
+	}
+	})
+		</script>
+	</body>
+	
+</html>

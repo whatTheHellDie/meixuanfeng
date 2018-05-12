@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="my_dingdan.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	(function (doc, win) {
+  var docEl = doc.documentElement,
+    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+    recalc = function () {
+      var clientWidth = docEl.clientWidth;
+      if (!clientWidth) return;
+      docEl.style.fontSize = 16 * (clientWidth / 320) + 'px';
+    };
+ 
+  if (!doc.addEventListener) return;
+  win.addEventListener(resizeEvt, recalc, false);
+  doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
+	</head>
+	<body>
+		<div class="wrap">
+		<div class="head">我的订单
+	<img src="img/return.png" class="return_img" onClick="javascript:history.back(-1);" alt="" />
+			
+		</div>
+		<!--订单开始-->
+		
+		<div class="choose_column">
+			<ul class="choose_ul">
+				<li class="choose_li choose_li_active"><a href="#0">全部</a></li>
+				<li class="choose_li"><a href="#1">待付款</a></li>
+				<li class="choose_li"><a href="#2" id="2">待发货</a></li>
+				<li class="choose_li"><a href="#3">已发货</a></li>
+				<li class="choose_li"><a href="#4">已完成</a></li>
+				<div class="clear"></div>
+			</ul>
+		</div>
+		<div class="grey_bg"></div>
+		<!--分栏开始-->
+		<div class="one_process">
+		<div class="dingdan_state">
+			<span class="this_state" style="">待付款</span>
+			<a href="#"><span class="pay_now">立即付款</span></a>
+			<a href="#"><img src="img/turn_right.png" class="turn_right" alt="" /></a>
+			<div class="my_time">订单号：201608524569862</div>
+		</div>
+		<ul class="my_ul">
+			<li class="my_li">
+				<img src="img/my_img.png" alt="" class="my_img" />
+				<div class="my_product">
+				<div class="my_title">美旋风天然活化能乳液，完美对抗衰老暗沉</div>
+				<div class="my_guige">红色30ml</div>
+				
+</div>
+			<div class="my_money">
+				<span>￥29.00</span><br />
+				<span class="my_number">×2</span>
+			</div>
+				<div class="clear"></div>
+			</li>
+			<li class="my_li">
+				<img src="img/my_img.png" alt="" class="my_img" />
+				<div class="my_product">
+				<div class="my_title">美旋风天然活化能乳液，完美对抗衰老暗沉</div>
+				<div class="my_guige">红色30ml</div>
+				
+</div>
+			<div class="my_money">
+				<span>￥29.00</span><br />
+				<span class="my_number">×2</span>
+			</div>
+				<div class="clear"></div>
+			</li>
+		
+		</ul>
+		<div class="my_pay_column">
+		<img src="img/del_zi.png" class="del" alt="" />
+		<span class="total_thing">共<span class="number">4</span>件商品   运费￥20.00   合计: <span class="total_money">￥58.00</span></span>
+		</div>
+		</div>
+		<div class="one_process">
+		<div class="dingdan_state">
+			<span>待发货</span>
+			<a href="#"><span class="pay_now">申请退款</span></a>
+			<a href="#"><img src="img/turn_right.png" class="turn_right" alt="" /></a>
+		</div>
+		<ul class="my_ul">
+			<li class="my_li">
+				<img src="img/my_img.png" alt="" class="my_img" />
+				<div class="my_product">
+				<div class="my_title">美旋风天然活化能乳液，完美对抗衰老暗沉</div>
+				<div class="my_guige">红色30ml</div>
+				
+</div>
+			<div class="my_money">
+				<span>￥29.00</span><br />
+				<span class="my_number">×2</span>
+			</div>
+				<div class="clear"></div>
+			</li>
+		
+		</ul>
+		<div class="my_pay_column">
+		<img src="img/del_zi.png" class="del" alt="" />
+		<span class="total_thing">共<span class="number">4</span>件商品   运费￥20.00   合计: <span class="total_money">￥58.00</span></span>
+		</div>
+		</div>
+		<div class="one_process">
+		<div class="dingdan_state">
+			<span>已发货</span>
+			<a href="#"><span class="pay_now">确认收货</span></a>
+			<a href="#"><img src="img/turn_right.png" class="turn_right" alt="" /></a>
+		</div>
+		<ul class="my_ul">
+			<li class="my_li">
+				<img src="img/my_img.png" id="heihei" alt="" class="my_img" />
+				<script type="text/javascript">
+				window.onload=function(){
+					var a=[5,4,3,2,1];
+					var b=a.map(function(ss){
+						return ss*ss
+					})
+					var c=a.filter(function(yty){
+						return yty<2; 
+					})
+					alert(c);
+				}
+			
+				</script>
+				<div class="my_product">
+				<div class="my_title">美旋风天然活化能乳液，完美对抗衰老暗沉</div>
+				<div class="my_guige">红色30ml</div>
+				
+</div>
+			<div class="my_money">
+				<span>￥29.00</span><br />
+				<span class="my_number">×2</span>
+			</div>
+				<div class="clear"></div>
+			</li>
+		
+		</ul>
+		<div class="my_pay_column">
+		<img src="img/del_zi.png" class="del" alt="" />
+		<span class="total_thing">共<span class="number">4</span>件商品   运费￥20.00   合计: <span class="total_money">￥58.00</span></span>
+		</div>
+		</div>
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			$(".choose_li").click(function(){
+				
+				$(this).addClass("choose_li_active").siblings(".choose_li").removeClass("choose_li_active");
+			})
+		})
+	</script>
+</html>

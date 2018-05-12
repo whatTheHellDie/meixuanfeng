@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;padding:0px;font-family:"微软雅黑";}
+a{text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+ul li{list-style-type:none;margin: 0; padding: 0;}
+img{border:0px;display:block;}
+.clear{clear:both;}
+input{outline: 0;}
+body{background:#fff;position: relative;}
+img{display: inline-block;}
+.shade{width:100%;height:100%;background:rgba(0,0,0,0.6);position:fixed;top:0px;left:0px;
+			z-index:2;display:none;padding-top: ;}
+.wrap{width:100%;max-width:640px;min-width:320px;margin:0px auto 0px;    padding-bottom: 6.25rem;padding-top: 2.8125rem;}
+.return_img{width: 0.75rem;height: 1.28125rem;position: absolute;top: 0.75rem;left: 1.09375rem;}
+.head{color: #fff;text-align: center;width: 100%;height:2.8125rem ;line-height: 2.8125rem;font-size:0.9375rem;background: #220B35;position: relative;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+.grey_space{background: #eaeaea;height:0.40625rem;}
+/**/
+.search_box_wrap{position: relative;width: 14.40625rem;height: 1.59375rem;margin-left: 2.0625rem;padding-top: 0.71875rem;}
+.search_box{width: 13.15625rem;height: 1.59375rem;border-radius:20px;background: #9b91a4;
+border: none;padding: 0 0.625rem;font-size: 0.875rem;color: #fff;}
+.search_box_img{width: 1.1875rem;height: 1.0625rem; position: absolute; top: 1rem;right: 0.71875rem;}
+.search_box_bigwrap{position: absolute;top: 0;left: 0;}
+
+
+/*确认订单*/
+.shop_list li{position: relative;height: 4.90625rem;border-bottom: 0.0625rem solid #dedede;}
+.duihao{position: absolute;left: 0.625rem;top: 2.84375rem;width: 1.125rem;height: 1.125rem;}
+.chanping_wrap{margin-top: 0.65625rem;margin-left: 0.65625rem;float: left;}
+.chanping{width: 3.40625rem;height: 3.40625rem;border: 1px solid #e7e7e7;}
+.my_address{font-size: 0.9375rem; position: relative;height: 7.875rem;}
+.my_address a{display: block;color: #000;}
+.my_address_bg{position: absolute;top: 0;left: 0;width: 100%;height: 7.875rem;}
+
+.my_location{width: 1.71875rem;height: 4.5625rem;float: left;padding: 3.125rem 1.375rem 0 1.375rem;}
+.my_location_img{width: 1.25rem;height: 1.53125rem;}
+.my_address_content{padding-left: 3.8125rem;position: absolute;width: ;float: left;margin-top: 1.875rem;padding-right: 3.5rem;font-size: 0px;}
+.my_name{font-size: 0.9375rem;font-weight: 800;}
+.my_number{padding-left: 3.375rem;font-weight: 800;font-size: 0.9375rem;}
+.address_address{font-weight: normal;font-size: 0.75rem;color: #767676;
+text-align: left;    margin-top: 0.34375rem;
+}
+.my_yunfei{text-align: right;color: #808080;font-size: 0.875rem;
+padding: 0.125rem 0; padding-right: 0.71875rem;}
+
+.shop_list_title{    height: 1.90625rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+    font-size: 0.6875rem;
+    color: #717171;
+    padding-top: 0.6875rem;
+    width: 9.1875rem;
+    margin-left: 0.4375rem;}
+.my_price{    width: 9rem;
+    font-size: 0.875rem;
+    color: #ec44a8;
+    position: absolute;
+    right: 0.71875rem;
+    top: 0.75rem;
+    text-align: right;}
+.my_price_little{font-size: 0.625rem;}
+.my_price_fu{font-size: 0.75rem;}
+.guige{color: #8c8c8c;float: left;padding-top: 0.5rem;margin-left: 0.4375rem;font-size: 0.5625rem;width: 12rem;
+    	overflow: hidden;/*注意不要写在最后了*/     
+white-space: nowrap;     
+-o-text-overflow: ellipsis;     
+text-overflow: ellipsis;font-size: 0.75rem;}
+.product_number{width: ;font-size: 0.875rem;position: absolute;    right: 0.71875rem;top: 2.625rem;}
+.pay_way_title{font-weight: 800;padding-left: 0.6875rem;font-size: 0.75rem;line-height: 1.6875rem;border-bottom: 1px solid #cfcfcf;color: #393939;}
+.has_money_title{padding-left: 1.34375rem;color: #808080;font-weight: normal;}
+.has_money{color: #ff6000;font-weight: 800;}
+.pay_choose{height: 2.90625rem;line-height: 2.90625rem;vertical-align: middle;}
+.choose_button{    position: relative;
+    top: 0.125rem;
+    margin-left: 1.25rem;
+    }
+    .pay_choose_ul{border-bottom: 0.0625rem solid #cfcfcf;margin-bottom: 3.125rem;}
+.pay_choose_li{float: left;font-size: 0.75rem;padding-right: 1.96875rem;}
+.pay_choose_img{    width: 1.46875rem;
+    height: 1.46875rem;
+    position: relative;
+    top: 0.46875rem;
+margin:0 0.5625rem;
+
+}
+.give_message{width: 17.125rem;margin: 0 auto;padding-top: 16px;}
+.give_message_text{width: 16.1875rem;padding: 0.4375rem 0.46875rem;height: 3.875rem;border: 1px solid #bdbdbd;color: #b1b1b1;}
+/*结算*/
+.checkout{width: 100%;height: 2.78125rem;border-top: 1px solid #bfbfbf;position: fixed;bottom: 3.0625rem;left: 0;background: #fff;}
+.checkout_duihao{width: 1.125rem;height: 1.125rem;margin-left: 0.84375rem;margin-top: 0.78125rem;float: left;margin-right: 0.65625rem;}
+.checkout_duihao_img{width: 1.125rem;height: 1.125rem;}
+.total_price{font-weight: 800;font-size:0.9375rem;margin-left: 0.75rem;margin-top: 0.75rem;color: #94009f;}
+.total_price_title{font-weight: normal;color: #000;font-size: 0.9375rem;font-size: 0.75rem;}
+.total_price_fu{font-size: 0.625rem;}
+.total_price_little{font-size: 0.625rem;}
+.item_price{font-size: 0.5625rem;float: left;width: 10.875rem;
+			    	overflow: hidden;/*注意不要写在最后了*/     
+white-space: nowrap;     
+-o-text-overflow: ellipsis;     
+text-overflow: ellipsis;
+}
+.checkout_button{float: right;width: 6.125rem;height: 2.875rem;line-height: 2.875rem;background: #94009f;text-align: center;font-size: 0.75rem;}
+.checkout_button a{color: #fff; display: block;}
+/*foot*/
+.foot{    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    max-width: 640px;
+    min-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    background: #220b35;
+    left: 0px;
+    right: 0px;
+    height: 3.0625rem;
+    box-sizing: border-box;
+    padding-top: 0.1875rem;}
+.foot_ul{padding-top: 0.1875rem;font-size: 0px;}
+.foot_li{float:left;width: 25%;}
+.foot_left{margin-left: 3.375rem;}
+.foot_a{width:100%;display:block;}
+.foot_img{}
+.shop_carNumber{width:14px;height:14px;background:red;color:#fff;
+				padding:1%;text-align:center;
+				position:absolute;top:-10%;left:69%;border-radius:4px;font-size:8px;}
+.foot_img img{    width: 1.375rem;
+    height: 1.375rem;margin:auto;display:block;}
+p.foot_title_p{width:100%;display:block;color:#fff;text-align:center;font-size:0.75rem;margin-top: 0.0625rem;}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #fff;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #fff;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #fff;
+}

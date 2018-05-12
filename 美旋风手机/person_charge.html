@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="person_charge.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/hhSwipe.js" type="text/javascript" charset="utf-8"></script>
+<style type="text/css">
+	td{ border-bottom: 1px solid #048F74;}
+	
+</style>
+<script type="text/javascript">
+	(function (doc, win) {
+  var docEl = doc.documentElement,
+    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+    recalc = function () {
+      var clientWidth = docEl.clientWidth;
+      if (!clientWidth) return;
+      docEl.style.fontSize = 16 * (clientWidth / 320) + 'px';
+    };
+ 
+  if (!doc.addEventListener) return;
+  win.addEventListener(resizeEvt, recalc, false);
+  doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
+	</head>
+	<body>
+			<div class="shadow">
+	<div class="remind">
+		<div class="close" onclick="hideMess()">x</div>
+        <div class="remind_main">请输入支付密码</div>
+        <div class="password_wrap"><input type="password" class="password_input" /></div>
+        <div class="remind_div" onclick="hideMessToUrl()">确认支付</div>
+    </div>
+</div>
+<style type="text/css">
+	.shadow{width:100%;position:fixed;height:100%;background:rgba(0,0,0,0.6);z-index:3;}
+	
+.remind{width:70%;position:absolute;top:40%;left:15%;background:#fff;border-radius:0.5rem;}
+.close{    position: absolute;
+    right: 4px;
+    top: -6px;
+    font-size: 1.0625rem;
+    color: #735555;}
+.remind_main{width:100%;color:#2d2d2d;text-align:center;line-height:1.5625rem;font-size:0.8125rem;padding:0.9375rem 0px;}
+.remind_div{    width: 77%;
+    height: 1.8125rem;
+    margin: 0 auto 0.625rem;
+    line-height: 1.75rem;
+    border-radius: 0.4375rem;
+    border-top: 1px solid #fd868a;
+    background: #fd868a;
+    text-align: center;
+    color: #fff;}
+.remind_div_left{width:50%;float:left;background:#fcfdfb;font-size:0.8125rem;background:#fd868a;color:#fff;}
+.remind_div_left span{display:block;width:100%;text-align:center;font-size:0.8125rem;}
+.password_wrap{    margin: 0 auto;
+    width: 68%;margin-bottom: 1.25rem;}
+.password_input{width: 100%;height: 1.3125rem;}
+</style>
+<script>
+	
+	//弹出窗
+	function showMess(){
+		$(".shadow").show();
+		document.addEventListener("touchmove", touch, false);//禁止滚动
+		$(".password_input").focus()
+	}
+	function hideMess(){
+		$(".shadow").hide();
+		document.addEventListener("touchmove", touch, false);//禁止滚动
+	}
+	function hideMessToUrl(){
+		$(".shadow").hide();
+		document.addEventListener("touchmove", touch, false);//禁止滚动
+		//跳转到其他界面或者是其他的操作
+	}
+	/*定义一个阻止页面滚动的函数*/ 
+	function touch(e) {
+		e.preventDefault();
+		e.stopPropagation();
+	}
+</script>
+		<div class="wrap">
+			<div class="head">账户提现
+	<img src="img/return.png" class="return_img" onClick="javascript:history.back(-1);" alt="" />
+			
+		</div>
+		<div class="person_charge">
+			<div class="my_card">到账银行卡<span class="card_name"></span>
+				<select class="my_select" name="" id="">
+				<option value="中国农业银行(7509)" gg="xxxxx">中国农业银行</option>
+				<option value="微信" gg="xxxxx">微信</option>
+				<option value="支付宝">支付宝</option>
+			</select>
+			</div>
+			<div class="money">提现金额</div>
+			<div class="choose_money"><span class="fu">￥</span><input type="text" class="input_money"/></div>
+			<div class="my_yue">账户余额￥<span class="all_money">8.21</span>，<span class="all">全部提现</span></div>
+		</div>
+		<div class="tijiao" style="background: #d5007e;" onclick="showMess()">下一步</div>
+		<div class="little_tip">充值成功后，管理员审核通过，将直接提现至您的银行账户上，请注意查收</div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$(".input_money").focus()
+				$(".card_name").text($(".my_select").val());
+				$(".my_select").change(function(){
+					$(".card_name").text($(".my_select").val());
+				})
+				//全部提现
+				$(".all").click(function(){
+					
+					$(".input_money").val($(".all_money").text())
+					$(".input_money").focus()
+				})
+			})
+		</script>
+		
+	</body>
+	
+</html>

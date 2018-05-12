@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;padding:0px;font-family:"微软雅黑";font-size: 0.75rem;}
+a{text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+ul li{list-style-type:none;margin: 0; padding: 0;}
+img{border:0px;display:block;}
+.clear{clear:both;}
+input{outline: 0;}
+body{background:#fff;position: relative;min-height: 30rem;}
+img{display: inline-block;}
+.shade{width:100%;height:100%;background:rgba(0,0,0,0.6);position:fixed;top:0px;left:0px;
+			z-index:2;display:none;padding-top: ;}
+.wrap{width:100%;min-width:320px;margin:0px auto 0px;    padding-bottom: 6.25rem;padding-top: 2.8125rem;}
+.return_img{width: 0.75rem;height: 1.28125rem;position: absolute;top: 0.75rem;left: 1.09375rem;}
+.head{color: #fff;text-align: center;width: 100%;height:2.8125rem ;line-height: 2.8125rem;font-size:0.9375rem;background: #220B35;position: relative;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+.grey_space{background: #eaeaea;height:0.40625rem;}
+/**/
+.search_box_wrap{position: relative;width: 14.40625rem;height: 1.59375rem;margin-left: 2.0625rem;padding-top: 0.71875rem;}
+.search_box{width: 13.15625rem;height: 1.59375rem;border-radius:20px;background: #9b91a4;
+border: none;padding: 0 0.625rem;font-size: 0.875rem;color: #fff;}
+.search_box_img{width: 1.1875rem;height: 1.0625rem; position: absolute; top: 1rem;right: 0.71875rem;}
+.search_box_bigwrap{position: absolute;top: 0;left: 0;}
+
+
+
+
+
+
+/*收获地址管理*/
+	.address_none_logo_wrap {
+    width: 6.3125rem;
+    height: 6.78125rem;
+    margin: 5.4375rem auto 0;
+}
+.address_none_logo{width: 6.3125rem;height: 6.78125rem;margin: 0 auto;}
+.none_to_add{text-align: center;color: #c5c5c5;font-size: 0.9375rem;font-weight: 800;margin-bottom: 3.8125rem;margin-top: 0.9375rem;}
+	.add_adress_column{font-size:0px;height: 2.3125rem;position: fixed;bottom:0rem;border-top:0.0625rem solid #b7b7b7;width: 100%;background: #d5007e;}
+	.add_adress_column a{color: #fff;display: block;    height: 2.3125rem;line-height: 2.3125rem;}
+	.add_address_button{padding-left: 0.5rem;float: left;font-size: 0.9375rem;}
+	.add_address_img{float: left;width: 1.0625rem;height: 1.0625rem;margin-left: 6rem;margin-top: 0.625rem;}
+	.turn_to_img_wrap{width: 10.21875rem;height: 1.40625rem;margin: 0  auto;}
+.turn_to_img{width: 10.21875rem;height: 1.40625rem;}
+
+
+
+
